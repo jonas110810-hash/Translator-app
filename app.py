@@ -17,7 +17,7 @@ if st.button("Translate"):
         prompt = f"Translate the following text into {lang} using a {tone} tone. Provide only the translation:\n\n{text}"
         try:
             response = client.models.generate_content(
-                model="gemini-2.0-flash",
+                model="gemini-2.5-flash-lite",
                 contents=prompt
             )
             st.subheader("Translation:")
