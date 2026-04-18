@@ -5,7 +5,7 @@ st.set_page_config(page_title="Pro-Translator AI", page_icon="🌐")
 
 st.title("Pro-Translator AI")
 
-api_key = st.secrets["AIzaSyArZY1fip9mTUm21SwEBkKBrOs6x_oQEQI"]
+api_key = st.secrets["GEMINI_API_KEY"]
 client = genai.Client(api_key=api_key)
 
 text = st.text_area("Enter text to translate:", height=150)
